@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite" verbose="1">
+    <listeners>
+        <listener class-name="com.softwaretestingboard.magenato.customlisteners.CustomListeners"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+    </listeners>
+    <test name="product Test">
+        <classes>
+            <class name="com.softwaretestingboard.magenato.testsuite.WomenTest"></class>
+            <class name="com.softwaretestingboard.magenato.testsuite.GearTest"></class>
+            <class name="com.softwaretestingboard.magenato.testsuite.MenTest"></class>
+
+
+        </classes>
+    </test>
+</suite>
